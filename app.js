@@ -132,7 +132,7 @@ const internQuestions = [
 function createEngineer() {
     inquirer.prompt(engineerQuestions).then(function (engineerResponse) {
         console.log(engineerResponse);
-        const teamEngineer = new Engineer(engineerResponse.engineerName, engineerResponse.engineerId,
+        const teamEngineer = new Engineer (engineerResponse.engineerName, engineerResponse.engineerId,
         engineerResponse.engineerEmail, engineerResponse.engineerGitHub);
         promptTeam();
         employee.push(teamEngineer)
